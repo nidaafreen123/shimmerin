@@ -1,0 +1,78 @@
+header{
+    padding: 0px;
+    margin:0;
+    height: 100px;
+    width: 100%;
+    background-image: url(index-img/shimmerin-head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.search-bar{
+    position: relative;
+    top: 15px;
+    left: 160px;
+    transform: translate(-50%, 50%);
+    transition: all is;
+    width: 0;
+    height: 0;
+    background: beige(14, 14, 2);
+    box-sizing: border-box;
+    border-radius: px;
+    border:0;
+    padding: 0px;
+}
+.search-bar input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size:15px ;
+    border-radius: 50px;
+    padding: 5px 10px;
+}
+.fa{
+  box-sizing: border-box;
+  padding-top: 5px;
+  padding: 8px; 
+  width: 42.5;
+  height: 42.5px;
+  position: absolute;
+  border-radius: 20%;
+  top: 0;
+  right: 50px;
+color: rgb(39, 28, 38);
+text-align: center;
+font-size: 14px;
+transform: all is;
+}
+.search-bar:hover{
+    width: 260px;
+    cursor: pointer;
+}
+.search-bar:hover input{
+    display: block;
+}
+.search-bar:hover .fa{
+    background: rgb(211, 190, 196);
+    color: aliceblue;
+    height: 30px;
+}
+body{
+    background-color: beige;
+}
+.fa-brands{
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: rgba(0, 0, 0, 0.534);
+}
+.fa-brands:hover{
+    color: rgba(63, 1, 63, 0.568);
+}
