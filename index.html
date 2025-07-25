@@ -159,17 +159,18 @@ a{
 /* Mobile (up to 480px) */
 @media (max-width: 400px) {
   header {
-    font-size: 35px;
-    padding-top: 30px;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     width: 400px;
     margin-top: 0;
     padding-left: 30px;
+    height: fit-content;
   }
   ul {
     flex-direction: column;
     text-align: center;
-      margin-right: 0px;
 
   }
 
@@ -181,7 +182,7 @@ a{
   li a {
     padding: 10px;
     font-size: 16px;
-    margin: 25px;
+    margin: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
@@ -194,7 +195,7 @@ a{
   .fa-brands {
     float: right;
     padding-top: 5px;
-    padding-right: 40px;
+    margin-right: 50px;
   }
   .home-img {
     display: flex;
@@ -204,7 +205,7 @@ a{
 
   .home-img img {
     float: left;
-    height: 155px;
+    height: 125px;
     margin-top: 8px;
     margin-left: 0;
     margin-right: 3px;
@@ -212,8 +213,8 @@ a{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
   }
 .home-img a:nth-child(4) img {
-  height: 250px;
-  width: 560px;
+  height: 180px;
+  width: 390px;
 }
 
   .welcome {
@@ -221,15 +222,17 @@ a{
     padding: 20px;
     text-align: left;
     font-size: 15px;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
     font-style: italic;
   }
-
+.welcome p{
+  font-size: 15px;
+}
   .welcome img {
     float: left;
     display: block;
     margin: 0 auto;
-    height: 240px;
+    height: 180px;
   }
 
   .bracelets {
@@ -239,7 +242,15 @@ a{
   }
 
   .brac1, .brac2, .brac3, .brac4, .brac5 {
-    width: 200px;
+    width: 180px;
+    margin-top: 10;
+    margin-left: 0;
+    padding: 20px;
+    padding-top: 1px;
+  }
+  .brac1 img, .brac2 img, .brac3 img, .brac4 img, .brac5 img {
+    width: 150px;
+    height: min-content;
     margin-top: 10;
     margin-left: 0;
     padding: 20px;
@@ -249,8 +260,8 @@ a{
   .shopping img {
     flex-direction: column;
     align-items: center;
-    width: 600px;
-    height: 90px;
+    width: 390px;
+    height: auto;
   }
 
 }
@@ -286,7 +297,7 @@ Shimmerin
 <div class="welcome">
   <a href="bracelet-collection.html">  <img src="index-img/welcome-img.jpg">
 </a>
- <h1>Welcome ~</h1><p style="font-size: 20px;">Step into a world of limitless beauty possibilities.<br> <br>Explore, induldge, and reveal your best self with us!</p>
+ <h1>Welcome ~</h1><p>Step into a world of limitless beauty possibilities.<br> <br>Explore, induldge, and reveal your best self with us!</p>
 </div>
 <div class="bracelets">
   <div class="brac1">
