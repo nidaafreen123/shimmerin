@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+      html, body, .about{
+    margin: 0;
+    overflow-x: hidden;
+
+  }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -35,14 +43,16 @@ li {
 
 li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgba(8, 8, 8, 0.829);
   text-align: center;
-  padding: 8px 20px; 
+  font-style: italic;
+  padding: 10px 30px; 
   text-decoration: none;
   justify-content: center;
   margin-left: 100px;
+  margin-right: 100px;
   font-size: 14px;
-
+  font-style: italic;
 }
 
 li a:hover {
@@ -57,14 +67,14 @@ img{
 .about{
     font-style: italic;
     color: rgba(0, 0, 0, 0.733);
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.747);
     height: 500px;
+    margin: 0;
 }
 
 .image-about img{
 float: right;
 height: 250px;
-border-radius: 20%;
 }
 .thank{
     text-align: center;
@@ -87,6 +97,68 @@ padding-left: 300px;
 }
 .about h1{
     padding-left: 120px;
+}
+@media (max-width: 390px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 390px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+  .about{
+  height: 715px;
+}
+.about h1{
+  padding: 0;
+  text-align: center;
+}
+.image-about img{
+  display: flex;
+  overflow: hidden;
+  height: 150px;
+  width: 180;
+  padding: 0;
+  margin-right: 60px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.shopp button{
+  display: none;
+}
 }
 </style>
 </head>
@@ -112,11 +184,12 @@ Shimmerin
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> 
    <div class="about">
-    <div class="image-about"><img src="about-us/aboutus-stack.jpg"><img src="about-us/aboutus-stack2.jpg"></div>
     <h1>Welcome to Shimmerin,</h1><h2>Where sparkle meets story!</h2>
-    <p>At <b>Shimmerin</b>, we believe that jewellery is more than just a pretty piece – it's a reflection of your personality,<br> a symbol of love, and a keeper of memories. Our mission is to craft unique, high-quality pieces that sparkle <br>with elegance and sophistication, while telling a story that's both personal and universal.</p>
+    <div class="image-about"><img src="about-us/aboutus-stack.jpg"><img src="about-us/aboutus-stack2.jpg"></div>
+    <p>At <b>Shimmerin</b>, we believe that jewellery is more than just a pretty piece – it's a reflection of your personality,<br> a symbol of love, and a keeper of memories. Our mission is to craft unique, high-quality pieces that sparkle <br>with elegance and sophistication, while telling a story that's both personal and universal.</p><br>
     <p><h3>Join the Sparkle ~</h3>Whether you're looking for the perfect gift, a special piece for yourself, or simply want to explore the world <br>of jewellery, we invite you to browse our collection and discover the sparkle that awaits. <br>Thank you for choosing <b>Shimmerin</b>. We're honoured to be a part of your story.
-<br><br><br><div class="thank"> Thank Youu!!</div><br><br>
+<br><br>
+<div class="thank"> Thank Youu!!</div><br><br>
 <div class="shopp">
     <a href="shop.html">
       <button>Continue Shopping ~</button></a>
@@ -124,4 +197,8 @@ Shimmerin
     </p>
    </div> 
 </body>
+<footer style="font-size: 10px; text-align: center;">
+    <p>© 2025 Shimmerin. All rights reserved.</p>
+  </footer>
+
 </html>

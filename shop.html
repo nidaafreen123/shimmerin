@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+    html, body{
+    margin: 0;
+      overflow-x: hidden;
+
+  }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -31,17 +39,19 @@
 
 .nav_bar ul li {
   float: left;
+  margin-right: 100px;
 }
 
 .nav_bar ul li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgba(8, 8, 8, 0.829);
   text-align: center;
-  padding: 8px 20px; 
+  padding: 10px 30px; 
   text-decoration: none;
   justify-content: center;
   margin-left: 100px;
   font-size: 14px;
+font-style: italic;
 
 }
 .nav_bar ul li a:hover {
@@ -65,6 +75,7 @@
 }
 .categories ul li{
   float: left;
+  margin-right: 25px;
 }
 .categories ul li a {
   display: flex;
@@ -73,11 +84,16 @@
   padding: 8px 20px; 
   text-decoration: none;
   justify-content: center;
-  margin-left: 70px;
+  margin-left: 50px;
   font-size: 15px;
+  font-style: italic;
+
 }
 .categories ul li a:hover {
   background-color:rgba(204, 171, 133, 0.719);
+    transform: scale(1.05 );
+  transition: 0.5s;
+
 }
 .shop-1 ul{
   display: flex;
@@ -88,21 +104,28 @@
   margin: 0;
   padding: 0;
   background-color:beige;
+      overflow-x: scroll;
+
 }
 .shop-1 ul li{
   float: left;
     }
 .shop-1 img{
   height: 250px;
-  clip-path: circle(30%);
-  shape-outside: circle(50%);
   overflow-x: scroll;
+  border-radius: 500px;
  flex-wrap: nowrap;
+ margin-top: 30px;
+ margin-right: 10px;
 }
+.shop-1 ul :hover{
+background-color: rgb(243, 243, 215);
+ transform: scale(1.05 );
+  transition: 0.5s;
+ }
 .everyday-essentials{
   background-color: rgb(221, 178, 121);
   height: 200px;
-  background-repeat: no-repeat;
 }
 .everyday-essentials ul li{
   float: left;
@@ -110,8 +133,8 @@
 }
 .everyday-essentials img{
   display: flex;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   justify-content: space-between;
   padding-right: 50px;
   padding-top: 18px;
@@ -130,6 +153,125 @@
   border-radius: 25%;
   margin-left: 100px;
   font-size: 20px;
+}
+@media (max-width: 390px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 390px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+  }
+  .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+  .search-bar input[type="search"] {
+    width: 70%;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .search-bar i.fa {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+
+
+  .shop-1 ul {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .shop-1 img {
+    height: 220px;
+    margin: 0;
+    border-radius: 500px;
+    margin-bottom: 10px;
+  }
+
+  .everyday-essentials {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-top: 0;
+    background-color: rgba(216, 184, 143, 0.678);
+    height: 800px;
+    margin-top: 0px;
+    overflow-x: auto;
+    gap: 10px;
+    padding-left: 0px;
+}
+
+
+  .everyday-essentials ul {
+    justify-content: center;
+    gap: 0px;
+    padding: 0;
+
+  }
+
+  .everyday-essentials img {
+    height: 150px;
+    width: 150px;
+    margin-left: 120px;
+
+  }
+
+  .text p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+ .text button {
+display: none;
+}
 }
 </style>
 </head>
@@ -172,17 +314,17 @@ Shimmerin
       <li><a href="earing-collection.html"><img src="shop-stack/earing-stack.jpg"></a></li>
       <li><a href="watch-collection.html"><img src="shop-stack/watch-stack.jpg"></a></li>
       <li><a href="necklace-collection.html"><img src="shop-stack/necklace-stack.jpg"></a></li>
-      <li><a href="bracelet-collection.html"><img src=""></a></li>
+      <li><a href="bracelet-collection.html"><img src="bracelet/bracelet-1.jpg"></a></li>
       <li><a href="hair-accessories-collection.html"><img src="shop-stack/hair-accesories.jpg"></a></li>
       <li><a href="fragrance-collection.html"><img src="shop-stack/perfumes-stack.jpg"></a></li>
     </ul>
   </div>
   <div class="everyday-essentials">
 <ul>
-  <li><a href="#1st-item"><img src="shop-stack/item-1.jpg"></a></li>
-  <li><a href="#1st-item"><img src="shop-stack/item2.jpg"></a></li>
-  <li><a href="#1st-item"><img src="shop-stack/item3.jpg"></a></li>
-  <li><a href="#1st-item"><img src="shop-stack/item4.jpg"></a></li>
+  <li><a href="payment.html"><img src="shop-stack/item-1.jpg"></a></li>
+  <li><a href="payment.html"><img src="shop-stack/item2.jpg"></a></li>
+  <li><a href="payment.html"><img src="shop-stack/item3.jpg"></a></li>
+  <li><a href="payment.html"><img src="shop-stack/item4.jpg"></a></li>
 </ul>
 <div class="text">
   <p>Everyday Essentials<br>
@@ -192,4 +334,8 @@ Shimmerin
 </div>
 
 </body>
+<footer style="font-size: 10px; text-align: center;">
+    <p>© 2025 Shimmerin. All rights reserved.</p>
+  </footer>
+
 </html>
