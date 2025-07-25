@@ -6,7 +6,13 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+  html, body{
+    margin: 0;
+      overflow-x: hidden;
+
+  }
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -17,8 +23,11 @@
             height: 100px;
             padding-top: 20px;
             color: rgba(0, 0, 0, 0.575);
+            margin-right: 0;
     }
-    
+ body{
+  overflow-x: hidden;
+ }   
 ul {
  list-style-type: none;
   margin: 0;
@@ -28,25 +37,27 @@ ul {
   justify-content: space-between;
   border-bottom: 2px solid rgba(197, 195, 195, 0.555);
 }
-
 li {
   float: left;
 }
 
 li a {
   display: block;
-  color: rgb(0, 0, 0);
+  color: rgba(8, 8, 8, 0.829);
   text-align: center;
-  padding: 8px 20px; 
+  padding: 10px 30px; 
   text-decoration: none;
   justify-content: center;
   margin-left: 100px;
+  margin-right: 100px;
   font-size: 14px;
-
+font-style: italic;
 }
 
 li a:hover {
-  background-color: rgb(202, 202, 165);
+  background-color: rgba(202, 202, 165, 0.952);
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 img{
   height: 200px;
@@ -56,7 +67,7 @@ img{
 }
 .welcome{
   margin-top: 30px;
-  background-color: rgb(197, 159, 109);
+  background-color: rgba(197, 159, 109, 0.685);
   height: 320px;
   padding-top: 25px;
   color: rgba(0, 0, 0, 0.596);
@@ -74,104 +85,203 @@ text-align: center
 }
 .bracelets{
   display: flex;
+  
+
+}
+.bracelets :hover{
+    background-color: rgb(202, 202, 165);
 
 }
 .bracelets img {
   margin-top: 20px;
-  
+ padding-right: 20px; 
 }
-.brac1 {
-width: 230px;
+.brac1, .brac2, .brac3, .brac4, .brac5 {
+  display: flexbox;
+width: auto;
 margin-top: 20px;
 margin-right: 20px;
-padding-bottom: 100px;
+padding-bottom: 20px;
 padding-left: 20px;
 padding-right: 0px;
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
 
 }
-.brac1 p{
+.brac1 p,.brac2 p,.brac3 p, .brac4 p, .brac5 p{
   color: rgba(0, 0, 0, 0.74);
   text-decoration: none;
   text-align: center;
   text-decoration: none;
   
-}
-.brac2 {
-width: 230px;
-margin-top: 20px;
-margin-right: 20px;
-padding-bottom: 100px;
-padding-left: 20px;
-padding-right: 0px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
 
-}
-.brac2 p{
-  color: rgba(0, 0, 0, 0.74);
-  text-decoration: none;
-  text-align: center;
-}
-.brac3 {
-width: 230px;
-margin-top: 20px;
-margin-right: 20px;
-padding-bottom: 100px;
-padding-left: 20px;
-padding-right: 0px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
-
-}
-.brac3 p{
-  color: rgba(0, 0, 0, 0.74);
-  text-decoration: none;
-  text-align: center;
-}
-
-.brac4 {
-width: 230px;
-margin-top: 20px;
-margin-right: 20px;
-padding-bottom: 100px;
-padding-left: 20px;
-padding-right: 0px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
-
-}
-.brac4 p{
-  color: rgba(0, 0, 0, 0.74);
-  text-decoration: none;
-  text-align: center;
-}
-
-.brac5 {
-width: 230px;
-margin-top: 20px;
-margin-right: 20px;
-padding-bottom: 100px;
-padding-left: 20px;
-padding-right: 0px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
-
-}
-.brac5 p{
-  color: rgba(0, 0, 0, 0.74);
-  text-decoration: none;
-  text-align: center;
 }
 
 .shopping{
   display: flex;
 }
+.home-img img
+{
+  display: flexbox;
+  height: 12rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 3.5rem ;
+  box-shadow: 3px 3px 15px rgba(59, 52, 43, 0.678);
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+.home-img a:nth-child(4) img {
+  height: 260px;
+  width: 550px;
+  padding: 0;
+}
+.home-img p button{
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 400px;
+  color: beige;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.home-img :hover{
+  background-color: rgb(202, 202, 165);
+  transition: 0.5s;
+}
+a{
+  text-decoration: none;
+}
+/* Mobile (up to 480px) */
+@media (max-width: 480px) {
+  header {
+    font-size: 35px;
+    padding-top: 30px;
+    text-align: center;
+    width: 480px;
+    margin-top: 0;
+    padding-left: 30px;
+  }
+  ul {
+    flex-direction: column;
+    text-align: center;
+      margin-right: 0px;
+
+  }
+
+  li {
+    float: left;
+      margin-right: 1px;
+
+  }
+  li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    padding-right: 40px;
+  }
+  .home-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .home-img img {
+    float: left;
+    height: 155px;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 3px;
+    padding: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.315);
+  }
+.home-img a:nth-child(4) img {
+  height: 250px;
+  width: 560px;
+}
+
+  .welcome {
+    height: auto;
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+    padding-bottom: 45px;
+    font-style: italic;
+  }
+
+  .welcome img {
+    float: left;
+    display: block;
+    margin: 0 auto;
+    height: 240px;
+  }
+
+  .bracelets {
+    flex-direction: row;
+    align-items: center;
+    overflow-x: scroll;
+  }
+
+  .brac1, .brac2, .brac3, .brac4, .brac5 {
+    width: 200px;
+    margin-top: 10;
+    margin-left: 0;
+    padding: 20px;
+    padding-top: 1px;
+  }
+
+  .shopping img {
+    flex-direction: column;
+    align-items: center;
+    width: 480px;
+    height: 90px;
+  }
+
+}
+
+/* Tablet (601px - 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  li a {
+    font-size: 14px;
+    margin-left: 30px;
+    padding: 8px 16px;
+  }
+
+  .bracelets {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brac1, .brac2, .brac3, .brac4, .brac5 {
+    width: 30px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .home-img img {
+    height: 180px;
+    margin: 10px;
+  }
+}
 </style>
 </head>
 <body>
-    <div class="header">
 <header>
   <form class="search-bar" action="index.html">
         <input type="search" placeholder="Search">
@@ -180,7 +290,6 @@ padding-right: 0px;
 Shimmerin
 <a href="https://www.instagram.com/ahda_079?igsh=azdveTNla2xxdnl3"><i class="fa-brands fa-instagram"></i>
 </a>
-</div>
 </header>
 
 <!--nav bar-->
@@ -188,40 +297,39 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
-<li><a href="about-us/about-us.html">About Us</a></li>
+<li><a href="about-us.html"">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
-   </nav> </ul>
-<body>
-<img src="index-img/neck1.jpg">
-<img src="index-img/neck2.jpg"></a>
-<a href="shop.html">
-  <img src="index-img/shop-now.jpg">
-</a>
-<img src="index-img/neck3.jpg">
+   </ul></nav> 
+  <div class="home-img">
+    <a href="necklace-collection.html"><img src="index-img/neck1.jpg"></a>
+       <a href="necklace-collection.html"><img src="index-img/neck2.jpg"></a>
+    <a href="necklace-collection.html"><img src="index-img/neck3.jpg"></a>
+    <a href="shop.html"><img src="index-img/shop-now.jpg" class="shop-now"></a>
+  </div>
 <div class="welcome">
   <a href="bracelet-collection.html">  <img src="index-img/welcome-img.jpg">
 </a>
- <h1>Welcome ~</h1><p>Step into a world of limitless beauty possibilities. Explore, induldge, and reveal your best self with us!</p>
+ <h1>Welcome ~</h1><p style="font-size: 20px;">Step into a world of limitless beauty possibilities.<br> <br>Explore, induldge, and reveal your best self with us!</p>
 </div>
 <div class="bracelets">
   <div class="brac1">
-    <a href="brac1">
+    <a href="payment.html">
   <img src="bracelet/bracelet1.jpg"><p>Daisy Layered Bracelet</p></a>
 </div>
 <div class="brac2">
-    <a href="brac2">
-    <img src="bracelet/bracelet2.jpg"><p>Double Layer satellite Chain Bracelet<br></p></a>
+    <a href="pa">
+    <img src="bracelet/bracelet2.jpg"><p>Double Layered Satellite Chain Bracelet<br></p></a>
 </div>
 <div class="brac3">
-<a href="brac3">
+<a href="payment.html">
   <img src="bracelet/bracelet3.jpg"><p>White Hearts Bracelet</p></a>
 </div>
 <div class="brac4">
-<a href="brac4">
+<a href="payment.html">
   <img src="bracelet/bracelet4.jpg"><p>Celestial Star Bracelet</p>
 </a></div>
 <div class="brac5">
-<a href="brac5">
+<a href="payment.html">
   <img src="bracelet/bracelet5.jpg"><p>Rhinestone And Butterfly Bracelet</p>
 </a></div>
 </div>
