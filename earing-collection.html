@@ -6,7 +6,14 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+      html, body {
+    margin: 0;
+      overflow-x: hidden;
+    }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -42,12 +49,27 @@ li a {
   justify-content: center;
   margin-left: 100px;
   font-size: 14px;
+font-style: italic;
 
 }
 
 li a:hover {
   background-color: rgb(202, 202, 165);
 }
+.nav_bar li a {
+  display: block;
+  color: rgba(8, 8, 8, 0.829);
+  text-align: center;
+  padding: 10px 30px; 
+  text-decoration: none;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 70px;
+  font-size: 14px;
+font-style: italic;
+}
+
+
 img{
   height: 200px;
   padding-top: 10px;
@@ -93,7 +115,13 @@ img{
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
+  padding-left: 0px ;
+  border-radius: 10px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
+
 }
 .hoops h1{
   font-size: 30px;
@@ -103,13 +131,101 @@ img{
 }
 .hoops img{
  display: flex;
-  height: 200px;
-  width: 180px;
+  height: 190px;
+  width: 190px;
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
+.earing_images button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.earing_images p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
+.hoops button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.hoops p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+    font-style: italic;
+    font-size: 20px;
+  }
+    .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 13px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+}
+
 </style>
 </head>
 <body>
@@ -130,6 +246,7 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
+ <li><a href="cart.html">My Cart</a></li>
 <li><a href="about-us.html">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> </div>
@@ -148,35 +265,37 @@ Shimmerin
 <div class="earing-items">
   <h1> Studs ~</h1>
     <ul>
- <li><a href="#"><img src="earings/stud-1.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-2.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-3.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-4.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-5.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-6.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-7.jpg"></a></li> 
- <li><a href="#"><img src="earings/stud-8.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-9.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-10.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-11.jpg"></a></li>
- <li><a href="#"><img src="earings/stud-12.jpg"></a></li>
+      <div class="earing_images">
+ <li><a href="payment.html"><img src="earings/stud-1.jpg"></a><a href="#"><p>Bow Chic Stud Earings<br>Rs 1050</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-2.jpg"></a><a href="#"><p>Rosy Glow Heart Studs<br>Rs 1000</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-3.jpg"></a><a href="#"><p>Pearl Perfection Stud Earings<br>Rs 1100</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-4.jpg"></a><a href="#"><p>Butterfly Kiss Studs<br>Rs 1000</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-5.jpg"></a><a href="#"><p>White Bow Studs<br>Rs 900</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-6.jpg"></a><a href="#"><p>Butterfly Whimsy Studs<br>Rs 1050</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-7.jpg"></a><a href="#"><p>Pearl Couquette Studs<br>Rs 1100</p><button>BUY NOW</button></a></li> 
+ <li><a href="payment.html"><img src="earings/stud-8.jpg"></a><a href="#"><p>Pearl and Gemstone Studs<br>Rs 990</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-9.jpg"></a><a href="#"><p>Floral Bud Studs<br>Rs 900</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-10.jpg"></a><a href="#"><p>Diamond Butterfly Studs<br>Rs 1200</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-11.jpg"></a><a href="#"><p>Heart-Shaped Diamond Studs <br>Rs 899</p><button>BUY NOW</button></a></li>
+ <li><a href="payment.html"><img src="earings/stud-12.jpg"></a><a href="#"><p>Floral Diamond Studs<br>Rs 999</p><button>BUY NOW</button></a></li>
+ </div>
 </ul>  
 </div>
 <div class="hoops">
   <h1> Hoop Earings ~</h1>
   <ul>
-    <li><a href="#"><img src="earings/hoop-1.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-2.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-3.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-4.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-5.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-6.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-7.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-8.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-9.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-10.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-11.jpg"></a></li>
-    <li><a href="#"><img src="earings/hoop-12.jpg"></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-1.jpg"></a><a href="#"><p>Pearl Hoop Earings<br>Rs 1100</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-2.jpg"></a><a href="#"><p>Blossom Charm Hoops<br>Rs 999</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-3.jpg"></a><a href="#"><p>Sweetheart Glow Earings<br>Rs 1100</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-4.jpg"></a><a href="#"><p>Blush Beaded Hoops<br>Rs 1200</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-5.jpg"></a><a href="#"><p>Dewleaf Dangle Hoops<br>Rs 1250</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-6.jpg"></a><a href="#"><p>Golden Ember Hoops<br>Rs 999</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-7.jpg"></a><a href="#"><p>Starry Hoop Earings<br>Rs 899</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-8.jpg"></a><a href="#"><p>Crystal Charm Hoops<br>Rs 1300</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-9.jpg"></a><a href="#"><p>Golden Ripple Hoops<br>Rs </p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-10.jpg"></a><a href="#"><p>Petal Loop Charm Earings<br>Rs 1100</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-11.jpg"></a><a href="#"><p>Rustic Leaf Hoops<br>Rs 990</p><button>BUY NOW</button></a></li>
+    <li><a href="payment.html"><img src="earings/hoop-12.jpg"></a><a href="#"><p>Midnight Leaf Hoops<br>Rs 999</p><button>BUY NOW</button></a></li>
   </ul>
 </div>
 

@@ -19,7 +19,6 @@ header{
     height: 0;
     background: beige(14, 14, 2);
     box-sizing: border-box;
-    border-radius: px;
     border:0;
     padding: 0px;
 }

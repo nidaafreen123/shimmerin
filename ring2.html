@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Responsive 2-per-row Product Grid (≤400px)</title>
+
+<style>
+  /* ---- Base / layout ---- */
+  :root{
+    --bg: #f8f5ef;
+    --text: #333;
+    --accent: #e6decf;
+    --radius: 10px;
+    --shadow: 0 4px 12px rgba(0,0,0,.08);
+    --maxw: 400px; /* site width cap */
+  }
+
+  *{ box-sizing: border-box; }
+  html,body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  .site{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+  }
+
+  header{
+    text-align:center;
+    padding: 1.25rem .5rem;
+    background: url('https://via.placeholder.com/800x200/efebe3/333?text=Shimmerin+Header') center/cover no-repeat;
+    color:#222;
+    font-style: italic;
+    position: relative;
+  }
+  header h1{
+    margin:0;
+    font-weight: 500;
+    backdrop-filter: blur(2px);
+  }
+
+  nav{
+    background: var(--accent);
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    margin: 1rem 0 1.25rem;
+    overflow:hidden;
+  }
+  nav ul{
+    display:flex;
+    flex-wrap: wrap;
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  nav li{
+    flex:1 0 50%;
+  }
+  nav a{
+    display:block;
+    padding:.75rem 1rem;
+    text-align:center;
+    text-decoration:none;
+    color:#111;
+    font-style: italic;
+  }
+  nav a:hover{
+    background:#ddd0;
+    filter:brightness(.95);
+  }
+
+  h2{
+    text-align:center;
+    font-style: italic;
+    margin: 1.5rem 0 1rem;
+    color:#4a3d3d;
+  }
+
+  /* ---- Product grid ---- */
+  .products{
+    display:grid;
+    gap: 14px;
+    /* Desktop/tablet default (if user opens wider than 400px) */
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-card{
+    background:#fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding:.75rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+
+  .product-card img{
+    width:100%;
+    height:auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  }
+
+  .title{
+    margin:.5rem 0 .25rem;
+    font-size:.9rem;
+  }
+
+  .price{
+    font-weight:600;
+    margin-bottom:.5rem;
+  }
+
+  .product-card button{
+    border:0;
+    background: beige;
+    border-radius:6px;
+    padding:.4rem .7rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.12);
+    cursor:pointer;
+  }
+
+  /* ---- ≤ 400px: force 2 columns ---- */
+  @media (max-width: 400px){
+    .products{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav li{
+      flex:1 0 100%;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="site">
+    <header>
+      <h1>Shimmerin</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <h2>Minimal Dainty Rings ~</h2>
+
+    <section class="products">
+      <!-- 20 products -->
+      <!-- Use any images you want; placeholders used here -->
+      <!-- 1 -->
+      <article class="product-card">
+        <img src="ringss/ring-1.jpg" alt="Ring 1">
+        <div class="title">18k Hearts Band Angler Ring</div>
+        <div class="price">Rs 1100</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 2 -->
+      <article class="product-card">
+        <img src="ringss/ring-2.jpg" alt="Ring 2">
+        <div class="title">Celestial Dream Ring</div>
+        <div class="price">Rs 1200</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 3 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+3" alt="Ring 3">
+        <div class="title">Eternal Love Ring</div>
+        <div class="price">Rs 1100</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 4 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+4" alt="Ring 4">
+        <div class="title">Diamond Halo Ring</div>
+        <div class="price">Rs 1100</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 5 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+5" alt="Ring 5">
+        <div class="title">Azure Dream Ring</div>
+        <div class="price">Rs 1200</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 6 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+6" alt="Ring 6">
+        <div class="title">Blushing Beauty Ring</div>
+        <div class="price">Rs 1300</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 7 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+7" alt="Ring 7">
+        <div class="title">Butterfly Dream Ring</div>
+        <div class="price">Rs 1500</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 8 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+8" alt="Ring 8">
+        <div class="title">Aurora Bloom Ring</div>
+        <div class="price">Rs 1100</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 9 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+9" alt="Ring 9">
+        <div class="title">Aurora Butterfly Band</div>
+        <div class="price">Rs 1200</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 10 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+10" alt="Ring 10">
+        <div class="title">Eternal Promise Ring</div>
+        <div class="price">Rs 1100</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 11 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+11" alt="Ring 11">
+        <div class="title">Celestia Band</div>
+        <div class="price">Rs 1100</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 12 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+12" alt="Ring 12">
+        <div class="title">Starlit Grace Ring</div>
+        <div class="price">Rs 1150</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 13 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+13" alt="Ring 13">
+        <div class="title">Luna Arc Band</div>
+        <div class="price">Rs 1190</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 14 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+14" alt="Ring 14">
+        <div class="title">Rose Dusk Ring</div>
+        <div class="price">Rs 990</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 15 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+15" alt="Ring 15">
+        <div class="title">Golden Petal Ring</div>
+        <div class="price">Rs 1400</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 16 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+16" alt="Ring 16">
+        <div class="title">Opal Mist Ring</div>
+        <div class="price">Rs 1600</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 17 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+17" alt="Ring 17">
+        <div class="title">Moonbeam Band</div>
+        <div class="price">Rs 1000</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 18 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+18" alt="Ring 18">
+        <div class="title">Twilight Kiss Ring</div>
+        <div class="price">Rs 1350</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 19 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+19" alt="Ring 19">
+        <div class="title">Aurora Crest Ring</div>
+        <div class="price">Rs 1280</div>
+        <button>BUY NOW</button>
+      </article>
+      <!-- 20 -->
+      <article class="product-card">
+        <img src="https://via.placeholder.com/600x800?text=Ring+20" alt="Ring 20">
+        <div class="title">Crystal Bloom Ring</div>
+        <div class="price">Rs 1500</div>
+        <button>BUY NOW</button>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <title>Hair Accessories</title>
     <link rel="stylesheet" href="./style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 <style>
+      html, body {
+    margin: 0;
+      overflow-x: hidden;
+    }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -42,12 +49,26 @@ li a {
   justify-content: center;
   margin-left: 100px;
   font-size: 14px;
+font-style: italic;
 
 }
 
 li a:hover {
   background-color: rgb(202, 202, 165);
 }
+.nav_bar li a {
+  display: block;
+  color: rgba(8, 8, 8, 0.829);
+  text-align: center;
+  padding: 10px 30px; 
+  text-decoration: none;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 70px;
+  font-size: 14px;
+font-style: italic;
+}
+
 img{
   height: 200px;
   padding-top: 10px;
@@ -87,7 +108,9 @@ img{
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.575);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .claw-clips-gold h1{
   font-size: 30px;
@@ -95,6 +118,79 @@ img{
   text-align: center;
   color: rgba(49, 32, 32, 0.842);
 }
+.claw-clips-gold button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.claw-clips-gold p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+    font-style: italic;
+    font-size: 20px;
+  }
+    .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 13px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+}
+
 </style>
 </head>
 <body>
@@ -115,6 +211,7 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
+  <li><a href="cart.html">My Cart</a></li>
 <li><a href="about-us.html">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> </div>
@@ -133,31 +230,31 @@ Shimmerin
 <div class="claw-clips-gold">
 <h1>Gold Claw Clips ~</h1>
 <ul>
-<li><a href="#"><img src="hair-accessories/gold-claw-clip1.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/gold-claw-clip2.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/gold-claw-clip3.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/gold-claw-clip4.jpg"></a></li>
+<li><a href="payment.html"><img src="hair-accessories/gold-claw-clip1.jpg"></a><a href="payment.html"><p>Gold & Pearl Claw Clips<br>Rs 1099</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/gold-claw-clip2.jpg"></a><a href="payment.html"><p>Aurora & Gold Claw Clips<br>Rs 1049</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/gold-claw-clip3.jpg"></a><a href="payment.html"><p>Ribbon Adorned Gold Claw Clips <br>Rs 999</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/gold-claw-clip4.jpg"></a><a href="payment.html"><p> Minimalist Gold Claw Clips<br>Rs 899</p><button>BUY NOW</button></a></li>
 </ul>
 <div class="claw-clips-pastel">
   <h1>Pastel Claw Clips ~</h1>
 <ul>
-<li><a href="#"><img src="hair-accessories/pastel-claw-clip1.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/pastel-claw-clip2.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/pastel-claw-clip3.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/pastel-claw-clip4.jpg"></a></li>
+<li><a href="payment.html"><img src="hair-accessories/pastel-claw-clip1.jpg"></a><a href="payment.html"><p>Pastel Beige Claw Clip Set <br>Rs 599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/pastel-claw-clip2.jpg"></a><a href="payment.html"><p>Turquoise Aceent Claw Clip Set <br>Rs 549</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/pastel-claw-clip3.jpg"></a><a href="payment.html"><p>Soft Pink Claw Clip Set <br>Rs 699</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/pastel-claw-clip4.jpg"></a><a href="payment.html"><p> Blue & Azure Claw Clip Set<br>Rs 899</p><button>BUY NOW</button></a></li>
 </ul>
 </div>
 <div class="hair-clips">
   <h1>Pastel Hair Pins ~</h1>
 <ul>
-<li><a href="#"><img src="hair-accessories/hair-pin1.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin2.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin3.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin4.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin5.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin6.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin7.jpg"></a></li>
-<li><a href="#"><img src="hair-accessories/hair-pin8.jpg"></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin1.jpg"></a><a href="payment.html"><p>Gold & Pearl Hair Pin Sets <br>Rs 799</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin2.jpg"></a><a href="payment.html"><p> Soft Pink & Pearl Hair Pin Sets<br>Rs899 </p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin3.jpg"></a><a href="payment.html"><p>Pink & White Floral Hair Pin Sets <br>Rs 799</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin4.jpg"></a><a href="payment.html"><p>Peach & Gold Hair Pin Sets <br>Rs 999</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin5.jpg"></a><a href="payment.html"><p>Beach-Themed Pastel Pink Hair Pin Sets <br>Rs 799</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin6.jpg" style="padding-left: 0;width: 160px;margin-right: 0 ;margin-left: 0;"></a><a href="payment.html"><p>Pink Pastel Hair Pin Sets <br>Rs 699</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin7.jpg"></a><a href="payment.html"><p>Festive Fair Hair Pin Sets <br>Rs 899</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="hair-accessories/hair-pin8.jpg"></a><a href="payment.html"><p>Whimsy Blue Hair Pin Sets <br>Rs 699</p><button>BUY NOW</button></a></li>
 </ul>
 </div>
 </div>

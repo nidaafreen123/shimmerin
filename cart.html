@@ -2,19 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>About Us</title>
+    <title>Shimmerin</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <style>
-      html, body, .about{
+  html, body{
     margin: 0;
-    overflow-x: hidden;
+      overflow-x: hidden;
 
   }
-
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -25,8 +23,11 @@
             height: 100px;
             padding-top: 20px;
             color: rgba(0, 0, 0, 0.575);
+            margin-right: 0;
     }
-    
+ body{
+  overflow-x: hidden;
+ }   
 ul {
  list-style-type: none;
   margin: 0;
@@ -36,7 +37,6 @@ ul {
   justify-content: space-between;
   border-bottom: 2px solid rgba(197, 195, 195, 0.555);
 }
-
 li {
   float: left;
 }
@@ -55,7 +55,9 @@ font-style: italic;
 }
 
 li a:hover {
-  background-color: rgb(202, 202, 165);
+  background-color: rgba(202, 202, 165, 0.952);
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 img{
   height: 200px;
@@ -63,40 +65,33 @@ img{
   padding-right: 50px;
   
 }
-.about{
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.733);
-    background-color: rgba(255, 228, 196, 0.747);
-    height: 500px;
-    margin: 0;
+body{
+    background-color:#ffd8ac;
 }
-
-.image-about img{
-float: right;
-height: 250px;
+p{
+    border: none;
+    background-color: bisque;
+    padding: 15px;
+    display: block;
+margin:  auto;
+width: 50%;
+text-align: center;
+color: black;
+margin-bottom: 10px;
 }
-.thank{
-    text-align: center;
+a{
+    text-decoration: none;
 }
-.shopp{
-color: rgba(0, 0, 0, 0.712);
-text-align: justify;
-text-decoration: none;
-padding-left: 300px;
+.cart-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
-.shopp button{
-  color: rgba(0, 0, 0, 0.596);
-  background-color: burlywood;
-  border: none;
-  font-size: 20px;
-  height: 30px;
+.cart-img img{
+    height: 400px;
 }
-.about {
-    padding-left: 50px;
-}
-.about h1{
-    padding-left: 120px;
-}
+/* Mobile (up to 480px) */
 @media (max-width: 400px) {
   header {
     font-size: 30px;
@@ -110,25 +105,24 @@ padding-left: 300px;
     font-style: italic;
     font-size: 20px;
   }
-    .nav_bar ul {
+  ul {
     flex-direction: column;
     text-align: center;
 
   }
 
-   .nav_bar ul li {
+  li {
     float: left;
-    margin-right: 0;
+      margin-right: 0;
 
   }
- .nav_bar ul li a {
+  li a {
     padding: 10px;
     font-size: 16px;
     margin: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
-
   .search-bar {
     left: 20%;
     transform: translateX(-50%);
@@ -140,40 +134,18 @@ padding-left: 300px;
     padding-top: 5px;
     margin-right: 50px;
   }
-  .about{
-  height: 715px;
-}
-.about h1{
-  padding: 0;
-  text-align: center;
-}
-.image-about img{
-  display: flex;
-  overflow: hidden;
-  height: 150px;
-  width: 180;
-  padding: 0;
-  margin-right: 60px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
-.shopp button{
-  display: none;
-}
 }
 </style>
 </head>
 <body>
-  <div class="header">
 <header>
-  <form class="search-bar" action="">
+  <form class="search-bar" action="index.html">
         <input type="search" placeholder="Search">
         <i class="fa fa-search"></i>
     </form>
 Shimmerin
 <a href="https://www.instagram.com/ahda_079?igsh=azdveTNla2xxdnl3"><i class="fa-brands fa-instagram"></i>
 </a>
-</div>
 </header>
 
 <!--nav bar-->
@@ -182,25 +154,13 @@ Shimmerin
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
  <li><a href="cart.html">My Cart</a></li>
-<li><a href="about-us.html">About Us</a></li>
-<li><a href="contact.html">Contact</a></li>
-   </nav> </ul> 
-   <div class="about">
-    <h1>Welcome to Shimmerin,</h1><h2>Where sparkle meets story!</h2>
-    <div class="image-about"><img src="about-us/aboutus-stack.jpg"><img src="about-us/aboutus-stack2.jpg"></div>
-    <p>At <b>Shimmerin</b>, we believe that jewellery is more than just a pretty piece – it's a reflection of your personality,<br> a symbol of love, and a keeper of memories. Our mission is to craft unique, high-quality pieces that sparkle <br>with elegance and sophistication, while telling a story that's both personal and universal.</p><br>
-    <p><h3>Join the Sparkle ~</h3>Whether you're looking for the perfect gift, a special piece for yourself, or simply want to explore the world <br>of jewellery, we invite you to browse our collection and discover the sparkle that awaits. <br>Thank you for choosing <b>Shimmerin</b>. We're honoured to be a part of your story.
-<br><br>
-<div class="thank"> Thank Youu!!</div><br><br>
-<div class="shopp">
-    <a href="shop.html">
-      <button>Continue Shopping ~</button></a>
-   </div>
-    </p>
-   </div> 
-</body>
-<footer style="font-size: 10px; text-align: center;">
-    <p>© 2025 Shimmerin. All rights reserved.</p>
-  </footer>
 
+<li><a href="about-us.html"">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+   </ul></nav> 
+   <div class="cart-img">
+    <img src="cart-img.jpg"> </div>
+   <a href="shop.html"> <p>Add Products to Cart</p></a>
+   </div>
+</body>
 </html>

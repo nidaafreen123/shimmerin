@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <title>Fragrances</title>
     <link rel="stylesheet" href="./style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 <style>
+      html, body {
+    margin: 0;
+      overflow-x: hidden;
+    }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -42,12 +49,25 @@ li a {
   justify-content: center;
   margin-left: 100px;
   font-size: 14px;
-
+font-style: italic;
 }
 
 li a:hover {
   background-color: rgb(202, 202, 165);
 }
+.nav_bar li a {
+  display: block;
+  color: rgba(8, 8, 8, 0.829);
+  text-align: center;
+  padding: 10px 30px; 
+  text-decoration: none;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 70px;
+  font-size: 14px;
+font-style: italic;
+}
+
 img{
   height: 200px;
   padding-top: 10px;
@@ -87,13 +107,28 @@ img{
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .dior h1{
    font-size: 30px;
   font-style: italic;
   text-align: center;
   color: rgba(49, 32, 32, 0.842); 
+}
+.dior button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.dior p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
 }
 .kayali img{
  display: flex;
@@ -102,7 +137,9 @@ img{
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .kayali h1{
     font-size: 30px;
@@ -110,14 +147,29 @@ img{
   text-align: center;
   color: rgba(49, 32, 32, 0.842);
 }
+.kayali button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.kayali p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
 .chanel img{
  display: flex;
   height: 250px;
-  width: 180px;
+  width: 200px;
   padding-right: 0px;
   padding-top : 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .chanel h1{
     font-size: 30px;
@@ -126,14 +178,29 @@ img{
   color: rgba(49, 32, 32, 0.842);
 
 }
+.chanel button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.chanel p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
 .sol-de-janeiro img{
  display: flex;
   height: 250px;
-  width: 180px;
+  width: 190px;
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+    border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .sol-de-janeiro h1{
     font-size: 30px;
@@ -142,6 +209,79 @@ img{
   color: rgba(49, 32, 32, 0.842);
 
 }
+.sol-de-janeiro button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.sol-de-janeiro p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+    font-style: italic;
+    font-size: 20px;
+  }
+    .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 13px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+}
+
 </style>
 </head>
 <body>
@@ -162,6 +302,7 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
+  <li><a href="cart.html">My Cart</a></li>
 <li><a href="about-us.html">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> </div>
@@ -180,39 +321,39 @@ Shimmerin
 <div class="dior">
   <h1>Dior ~</h1>
 <ul>
-<li><a href="#"><img src="fragrances/dior-1.jpg"></a></li>
-<li><a href="#"><img src="fragrances/dior-2.jpg"></a></li>
-<li><a href="#"><img src="fragrances/dior-3.jpg"></a></li>
-<li><a href="#"><img src="fragrances/dior-4.jpg"></a></li>
+<li><a href="payment.html"><img src="fragrances/dior-1.jpg"></a><a href="payment.html"><p>DIOR Miss Dior Eau De Parfum <br>Rs 11,500</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/dior-2.jpg"></a><a href="payment.html"><p>DIOR Miss Dior <br>Eau De Toilette Roller-Pearl <br>Rs 6000</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/dior-3.jpg"></a><a href="payment.html"><p>Gris Dior Eau De Parfum <br>Rs 9850</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/dior-4.jpg"></a><a href="payment.html"><p>DIOR Jadore L'OR Eau De Parfum <br>Rs 16,400</p><button>BUY NOW</button></a></li>
 </ul>    
 </div>  
 <div class="kayali">
   <h1>Kayali ~</h1>
 <ul>
-<li><a href="#"><img src="fragrances/kayali-1.jpg"></a></li>
-<li><a href="#"><img src="fragrances/kayali-2.jpg"></a></li>
-<li><a href="#"><img src="fragrances/kayali-3.jpg"></a></li>
-<li><a href="#"><img src="fragrances/kayali-4.jpg"></a></li>
+<li><a href="payment.html"><img src="fragrances/kayali-1.jpg"></a><a href="payment.html"><p>Kayali Vanilla 28 Eau De Parfum <br>Rs 8600</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/kayali-2.jpg"></a><a href="payment.html"><p>Kayali Vanilla 28 &<br> Kayali Boujee Marshmallow 81 <br>Rs 17,500</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/kayali-3.jpg"></a><a href="payment.html"><p>Kayali Vanilla Candy 42 <br>Eau De Parfum<br>Rs 8600</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/kayali-4.jpg"></a><a href="payment.html"><p>Kayali Fluer Majesty<br> Rose Royale 31<br>Rs 8600</p><button>BUY NOW</button></a></li>
 </ul>    
 </div>  
 <div class="chanel">
   <h1>Chanel ~</h1>
 <ul>
-<li><a href="#"><img src="fragrances/chanel-1.jpg"></a></li>
-<li><a href="#"><img src="fragrances/chanel-2.jpg"></a></li>
-<li><a href="#"><img src="fragrances/chanel-3.jpg"></a></li>
-<li><a href="#"><img src="fragrances/chanel-4.jpg"></a></li>
-<li><a href="#"><img src="fragrances/chanel-5.jpg"></a></li>
-<li><a href="#"><img src="fragrances/chanel-6.jpg"></a></li>
+<li><a href="payment.html"><img src="fragrances/chanel-1.jpg"></a><a href="payment.html"><p>Chanel N5 L'EAU Eau De Parfum <br>Rs 11950</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/chanel-2.jpg"></a><a href="payment.html"><p>Chanel COCO Eau De Parfum <br>Rs 12350</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/chanel-3.jpg"></a><a href="payment.html"><p>Chanel< COCO || Chanel N5 L'EAU <br>Eau De Parfum  <br>Rs 24300</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/chanel-4.jpg"></a><a href="payment.html"><p> Gabrielle Chanel<br>Eau De Parfum<br>Rs 11950</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/chanel-5.jpg"></a><a href="payment.html"><p>Chance Eau Fraiche<br> Eau De Toilette Spray <br>Rs 10250</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/chanel-6.jpg"></a><a href="payment.html"><p> Chance Eau Splendide<br> Eau De Parfum Spray<br>Rs 11950</p><button>BUY NOW</button></a></li>
 </ul>    
 </div>  
 <div class="sol-de-janeiro">
   <h1>Sol De Janeiro ~</h1>
 <ul>
-<li><a href="#"><img src="fragrances/sol-de-janeiro1.jpg"></a></li>
-<li><a href="#"><img src="fragrances/sol-de-janeiro2.jpg"></a></li>
-<li><a href="#"><img src="fragrances/sol-de-janeiro3.jpg"></a></li>
-<li><a href="#"><img src="fragrances/sol-de-janeiro5.jpg"></a></li>
+<li><a href="payment.html"><img src="fragrances/sol-de-janeiro1.jpg"></a><a href="payment.html"><p>Cheirosa 40 Bom Dia Bright<br> Perfume Mist with Black Amber<br> Plum & Vanilla <br>Rs 2600</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/sol-de-janeiro2.jpg"></a><a href="payment.html"><p>Cheirosa 68 Beija Flor Perfume <br>Mist with Brazilian Jasmine & Pink <br>Dragonfruit Plum & Vanilla <br>Rs 2600</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/sol-de-janeiro3.jpg"></a><a href="payment.html"><p>Cheirosa 59 Delicia Drench <br>Perfume Mist with Vanilla<br> Orchid & Sheer Sandalwood <br>Rs 2600</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="fragrances/sol-de-janeiro5.jpg"></a><a href="payment.html"><p>Cheirosa 62 Perfume Mist<br> with Vanilla & Salted Caramel<br> Plum & Vanilla <br>Rs 2600</p><button>BUY NOW</button></a></li>
 </ul>    
 </div>  
 

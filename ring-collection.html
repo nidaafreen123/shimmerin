@@ -65,8 +65,8 @@ li a:hover {
   padding: 10px 30px; 
   text-decoration: none;
   justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 80px;
+  margin-right: 70px;
   font-size: 14px;
 font-style: italic;
 }
@@ -112,7 +112,7 @@ img{
  display: flex;
   height: 250px;
   width: 180px;
-    padding-right: 0px;
+  padding-right: 0px;
   padding-left: 0px ;
   padding-top: 0px;
   padding-bottom: 0px;
@@ -139,6 +139,66 @@ width: 100px;
 font-family: 'Times New Roman', Times, serif;
 color: rgba(0, 0, 0, 0.801);
 }
+
+@media (max-width: 400px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+    font-style: italic;
+    font-size: 20px;
+  }
+    .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 13px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.699);
+  
+}
+}
 </style>
 </head>
 <body>
@@ -159,6 +219,7 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
+ <li><a href="cart.html">My Cart</a></li>
 <li><a href="about-us.html">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> </div>

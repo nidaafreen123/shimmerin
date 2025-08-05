@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <title>Necklace</title>
     <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
 <style>
+      html, body {
+    margin: 0;
+      overflow-x: hidden;
+    }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -42,12 +49,26 @@ li a {
   justify-content: center;
   margin-left: 100px;
   font-size: 14px;
+font-style: italic;
 
 }
 
 li a:hover {
   background-color: rgb(202, 202, 165);
 }
+.nav_bar li a {
+  display: block;
+  color: rgba(8, 8, 8, 0.829);
+  text-align: center;
+  padding: 10px 30px; 
+  text-decoration: none;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 70px;
+  font-size: 14px;
+font-style: italic;
+}
+
 img{
   height: 200px;
   padding-top: 10px;
@@ -87,13 +108,28 @@ img{
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.562);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .necklace-items h1{
   font-size: 30px;
   font-style: italic;
   text-align: center;
   color: rgba(49, 32, 32, 0.842);
+}
+.necklace-items button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.necklace-items p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
 }
 .chain-necklace img{
   display: flex;
@@ -102,13 +138,87 @@ img{
   padding-right: 0;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 .chain-necklace h1{
   font-size: 30px;
   font-style: italic;
   text-align: center;
   color: rgba(49, 32, 32, 0.842);
+}
+.chain-necklace button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.chain-necklace p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+    font-style: italic;
+    font-size: 20px;
+  }
+    .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 13px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
 }
 
 </style>
@@ -131,6 +241,7 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
+  <li><a href="cart.html">My Cart</a></li>
 <li><a href="about-us.html">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> </div>
@@ -149,48 +260,48 @@ Shimmerin
 <div class="necklace-items">
 <h1>Pendant Necklaces ~</h1>
 <ul>
-<li><a href="#"><img src="necklace/necklace-16.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-7.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-14.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-13.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-12.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-9.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-3.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-2.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-1.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-10.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-4.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-5.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-6.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-15.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-8.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-11.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-16-17.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-17-18.jpg"></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-16.jpg"></a><a href="payment.html"><p>Minimal Heart Pendant<br>Rs 899</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-7.jpg"></a><a href="payment.html"><p>Blush Bloom Pendant<br>Rs 1199</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-14.jpg"></a><a href="payment.html"><p> Twilight Heart Pendant<br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-13.jpg"></a><a href="payment.html"><p>Soft Gold Heart Pendant <br>Rs 999</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-12.jpg"></a><a href="payment.html"><p>Golden Flora Pendant <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-9.jpg"></a><a href="payment.html"><p>Emerald & Gold Pendant <br>Rs 1099</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-3.jpg"></a><a href="payment.html"><p>Royal Keepsake Pendant <br>Rs 1099</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-2.jpg"></a><a href="payment.html"><p>Sunlit Gold Muse <br>Rs 999</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-1.jpg"></a><a href="payment.html"><p>Sunlit Rose Muse<br>Rs 999</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-10.jpg"></a><a href="payment.html"><p>White & Gold Heart Pendant  <br>Rs 899</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-4.jpg"></a><a href="payment.html"><p>Sunlit Gold Rose Muse <br>Rs 1000</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-5.jpg"></a><a href="payment.html"><p>Eclipse Halo Rose Pendant <br>Rs 1099</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-6.jpg"></a><a href="payment.html"><p>Daisy Stone Pendant <br>Rs 1099</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-15.jpg"></a><a href="payment.html"><p>Van Cleef Gold Pendant <br>Rs 1199</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-8.jpg"></a><a href="payment.html"><p>Stone Studded Floral Pendant <br>Rs 899</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-11.jpg"></a><a href="payment.html"><p>Twin Hearts Pendant<br>Rs 999</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-16-17.jpg"></a><a href="payment.html"><p>Gold Couquette pendant <br>Rs 899</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-17-18.jpg"></a><a href="payment.html"><p>Gold Heart Pendant<br>Rs 1200</p><button>BUY NOW</button></a></li>
 </ul>
 </div>
 
 <div class="chain-necklace" >
 <h1>Fairy-core Chain Necklaces ~</h1>
 <ul>
-<li><a href="#"><img src="necklace/necklace-17.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-18.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-19.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-20.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-21.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-22.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-23.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-23-24.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-24.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-25.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-26.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-27.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-28.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-29.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-30.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-31.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-32.jpg"></a></li>
-<li><a href="#"><img src="necklace/necklace-33.jpg"></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-17.jpg"></a><a href="payment.html"><p>Rosewood Enchantress <br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-18.jpg"></a><a href="payment.html"><p>Moonlit Dewdrops <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-19.jpg"></a><a href="payment.html"><p> Golden Fae Bloom<br>Rs 1599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-20.jpg"></a><a href="payment.html"><p>Aqua Willow Dream <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-21.jpg"></a><a href="payment.html"><p>Twilight Whisper <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-22.jpg"></a><a href="payment.html"><p>Petal Mist Melody <br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-23.jpg"></a><a href="payment.html"><p>Bluebell Charm <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-23-24.jpg"></a><a href="payment.html"><p>Starlit Petals <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-24.jpg"></a><a href="payment.html"><p>Amber Rose Glimer <br>Rs 1599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-25.jpg"></a><a href="payment.html"><p>Frosted Fernlight <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-26.jpg"></a><a href="payment.html"><p>Blush Faeire Garland <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-27.jpg"></a><a href="payment.html"><p>Twilight Blossom Veil <br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-28.jpg"></a><a href="payment.html"><p>Crystal Willow Lace <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-29.jpg"></a><a href="payment.html"><p>Sunset Spellbound <br>Rs 1599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-30.jpg"></a><a href="payment.html"><p>Lilac Whimsy <br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-31.jpg"></a><a href="payment.html"><p>Blushed Roselight <br>Rs 1199</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-32.jpg"></a><a href="payment.html"><p>Berry Thistle garland <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="necklace/necklace-33.jpg"></a><a href="payment.html"><p>Meadow Nymph Drape <br>Rs 1299</p><button>BUY NOW</button></a></li>
 </ul>    
 </div>
 </body>

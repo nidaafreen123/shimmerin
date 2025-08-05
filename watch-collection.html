@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
+
+      html, body {
+    margin: 0;
+      overflow-x: hidden;
+    }
+
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -42,12 +50,26 @@ li a {
   justify-content: center;
   margin-left: 100px;
   font-size: 14px;
+font-style: italic;
 
 }
 
 li a:hover {
   background-color: rgb(202, 202, 165);
 }
+.nav_bar li a {
+  display: block;
+  color: rgba(8, 8, 8, 0.829);
+  text-align: center;
+  padding: 10px 30px; 
+  text-decoration: none;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 70px;
+  font-size: 14px;
+font-style: italic;
+}
+
 img{
   height: 200px;
   padding-top: 10px;
@@ -82,12 +104,14 @@ img{
 }
 .watch-items img{
  display: flex;
-  height: 250px;
-  width: 250px;
+  height: 280px;
+  width: 280px;
   padding-right: 0px;
   padding-top: 0;
   margin-right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.842);
+    border-radius: 5px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.308);
+
 }
 h1{
   font-size: 30px;
@@ -95,6 +119,79 @@ h1{
   text-align: center;
   color: rgba(49, 32, 32, 0.842);
 }
+.watch-items button{
+background-color: beige;
+border: none;
+border-radius: 5px;
+box-shadow: 2px 3px 8px ;
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+width: 100px;
+}
+.watch-items p{
+font-family: 'Times New Roman', Times, serif;
+color: rgba(0, 0, 0, 0.801);
+}
+@media (max-width: 400px) {
+  header {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 400px;
+    margin-top: 0;
+    padding-left: 30px;
+    height: fit-content;
+    font-style: italic;
+    font-size: 20px;
+  }
+    .search-bar {
+    left: 20%;
+    transform: translateX(-50%);
+    top: 2px;
+  }
+
+  .fa-brands {
+    float: right;
+    padding-top: 5px;
+    margin-right: 50px;
+  }
+    .nav_bar ul {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+   .nav_bar ul li {
+    float: left;
+    margin-right: 0;
+
+  }
+ .nav_bar ul li a {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .categories ul{
+  flex-direction: column;
+  text-align: center;
+  }
+  .categories ul li{
+   float: left;
+  }
+  .categories ul li a{
+    padding: 0px;
+    font-size: 13px;
+    margin: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.699);
+  }
+
+}
+
 </style>
 </head>
 <body>
@@ -115,6 +212,7 @@ Shimmerin
         <ul>
   <li><a class="active" href="index.html">Home </a></li>
  <li><a href="shop.html">Shop</a></li>
+  <li><a href="cart.html">My Cart</a></li>
 <li><a href="about-us.html">About Us</a></li>
 <li><a href="contact.html">Contact</a></li>
    </nav> </ul> </div>
@@ -133,24 +231,24 @@ Shimmerin
 <div class="watch-items">
   <h1>Vintage Watches ~</h1>
   <ul>
-<li><a href="#"><img src="watches/watch-1.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-2.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-3.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-4.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-5.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-6.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-7.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-8.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-9.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-10.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-11.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-12.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-13.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-14.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-15.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-16.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-17.jpg"></a></li>
-<li><a href="#"><img src="watches/watch-18.jpg"></a></li>
+<li><a href="payment.html"><img src="watches/watch-1.jpg"></a><a href="payment.html"><p>Ivory Diamond Studded Watch<br>Rs 1899</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-2.jpg"></a><a href="payment.html"><p>Black Luxe Gold Watch <br>Rs 1699</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-3.jpg"></a><a href="payment.html"><p>Gold Mesh Strap Watch <br>Rs 1199</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-4.jpg"></a><a href="payment.html"><p>Elysian Gold Watch <br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-5.jpg"></a><a href="payment.html"><p>Sunlit Charm Gold Watch <br>Rs 1099</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-6.jpg"></a><a href="payment.html"><p>Honey Dusk Gold Watch <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-7.jpg"></a><a href="payment.html"><p>Honey Dusk Diamond Studded Watch <br>Rs 1599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-8.jpg"></a><a href="payment.html"><p>Silver And Gold Ember Watch <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-9.jpg"></a><a href="payment.html"><p>Belle de Minuit Classic Watch  <br>Rs 1799</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-10.jpg"></a><a href="payment.html"><p>Midnight Muse Luxe Watch<br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-11.jpg"></a><a href="payment.html"><p>Champagne Blush Diamond Studded Watch<br>Rs 1199</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-12.jpg"></a><a href="payment.html"><p>Regal Halo Gold Watch <br>Rs 1699</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-13.jpg"></a><a href="payment.html"><p>Vintage Opaline Sleek Watch <br>Rs 1299</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-14.jpg"></a><a href="payment.html"><p>Ivory Grace Watch <br>Rs 1499</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-15.jpg"></a><a href="payment.html"><p>Golden Monarch Watch <br>Rs 1599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-16.jpg"></a><a href="payment.html"><p>Rosewoven Mesh Strap Watch <br>Rs 1399</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-17.jpg"></a><a href="payment.html"><p>Pearl Lattice Diamond Studded Watch <br>Rs 1599</p><button>BUY NOW</button></a></li>
+<li><a href="payment.html"><img src="watches/watch-18.jpg"></a><a href="payment.html"><p>Sovereign Gold Timepiece Watch <br>Rs 1699</p><button>BUY NOW</button></a></li>
  </ul>
     
 </div>
