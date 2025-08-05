@@ -203,22 +203,35 @@ color: rgba(0, 0, 0, 0.801);
     margin-top: 5px;
     margin-bottom: 5px;
   }
-  .categories ul{
-  flex-direction: column;
-  text-align: center;
+ .categories ul {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
-  .categories ul li{
-   float: left;
+
+  .categories ul::-webkit-scrollbar {
+    display: none;
   }
-  .categories ul li a{
+
+  .categories ul li {
+    flex: 0 0 auto;
+    margin-right: 10px;
+  }
+
+  .categories ul li a {
+    padding: 8px 16px;
+    font-size: 14px;
+    white-space: nowrap;
     padding: 0px;
     font-size: 13px;
-    margin: 25px;
+    margin: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
     color: rgba(0, 0, 0, 0.699);
-  }
-
+  
+}
 }
 
 </style>
