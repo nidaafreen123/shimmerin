@@ -11,8 +11,10 @@
 <style>
     html, body {
     margin: 0;
-      overflow-x: hidden;
-    }
+    overflow-x: hidden;
+    padding: 0;  
+    max-width: 100%;
+  }
     header{
      
         background-image: url(shimmerin-head.jpg);
@@ -139,9 +141,6 @@ width: 100px;
 font-family: 'Times New Roman', Times, serif;
 color: rgba(0, 0, 0, 0.801);
 }
-button{
-  display: none;
-}
 
 @media (max-width: 400px) {
   header {
@@ -167,6 +166,10 @@ button{
     padding-top: 5px;
     margin-right: 50px;
   }
+  li a {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
     .nav_bar ul {
     flex-direction: column;
     text-align: center;
@@ -199,7 +202,7 @@ button{
 
   .categories ul li {
     flex: 0 0 auto;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   .categories ul li a {
@@ -214,6 +217,49 @@ button{
     color: rgba(0, 0, 0, 0.699);
   
 }
+  .ring-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ring-items ul li {
+    width: 45%;
+    margin:0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ring-items ul li img {
+    width: fit-content;
+    height: 220px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .ring-items ul li p {
+    font-size: 14px;
+    text-align: center;
+    margin:  0;
+  }
+  .ring-items ul li button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .ring_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
+
 button{
     background-color: rgba(255, 228, 196, 0.26);
     border: none;
@@ -222,7 +268,6 @@ button{
 .scroll-btn-left{
   margin-right: 332px;
 }
-
 }
 </style>
 </head>
@@ -263,8 +308,9 @@ Shimmerin
     <button class="scroll-btn-right">&#10095;</button> 
 
   </div>
+  
 <div class="ring-items">
-  <h1>Minimal Dainty Rings ~</h1>
+  <h1>Minimal Dainty Rings </h1>
     <ul>
       <div class="ring_images">
         <li><a href="payment.html"><img src="ringss/ring-1.jpg"></a><a href="payment.html"><p>18k Hearts Band Angler Ring<br>Rs 1100</p><button>BUY NOW</button></a></li>
