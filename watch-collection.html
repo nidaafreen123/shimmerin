@@ -48,7 +48,7 @@ li a {
   padding: 8px 20px; 
   text-decoration: none;
   justify-content: center;
-  margin-left: 100px;
+  margin-left: 0px;
   font-size: 14px;
 font-style: italic;
 
@@ -132,11 +132,8 @@ width: 100px;
 font-family: 'Times New Roman', Times, serif;
 color: rgba(0, 0, 0, 0.801);
 }
-button{
-  display: none;
-}
-
-@media (max-width: 400px) {
+@media (max-width: 400px)
+ {
   header {
     font-size: 30px;
     padding-top: 20px;
@@ -207,6 +204,56 @@ button{
     color: rgba(0, 0, 0, 0.699);
   
 }
+.watch-items h1{
+    font-size: 22px;
+}
+  .watch-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .watch-items ul li {
+    width: 45%;
+    margin:0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .watch-items ul li img {
+    width: fit-content;
+    height: 175px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .watch-items ul li p {
+    font-size: 12px;
+    text-align: center;
+    margin:  8px 0 4px 0;
+    line-height: 1.3;
+    word-break: break-all;
+  }
+  .watch-items ul li button {
+    width: 150px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .watch_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
+
+
 button{
     background-color: rgba(255, 228, 196, 0.26);
     border: none;
@@ -258,7 +305,7 @@ Shimmerin
 
   </div>
 <div class="watch-items">
-  <h1>Vintage Watches ~</h1>
+  <h1>Vintage Watches </h1>
   <ul>
 <li><a href="payment.html"><img src="watches/watch-1.jpg"></a><a href="payment.html"><p>Ivory Diamond Studded Watch<br>Rs 1899</p><button>BUY NOW</button></a></li>
 <li><a href="payment.html"><img src="watches/watch-2.jpg"></a><a href="payment.html"><p>Black Luxe Gold Watch <br>Rs 1699</p><button>BUY NOW</button></a></li>

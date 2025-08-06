@@ -47,7 +47,7 @@ li a {
   padding: 8px 20px; 
   text-decoration: none;
   justify-content: center;
-  margin-left: 100px;
+  margin: 0px;
   font-size: 14px;
 font-style: italic;
 
@@ -166,9 +166,6 @@ width: 100px;
 font-family: 'Times New Roman', Times, serif;
 color: rgba(0, 0, 0, 0.801);
 }
-button{
-  display: none;
-}
 
 @media (max-width: 400px) {
   header {
@@ -241,6 +238,55 @@ button{
     color: rgba(0, 0, 0, 0.699);
   
 }
+.earing-items h1{
+    font-size: 22px;
+}
+  .earing-items ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .earing-items ul li {
+    width: 45%;
+    margin:0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .earing-items ul li img {
+    width: fit-content;
+    height: 220px;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+
+  .earing-items ul li p {
+    font-size: 12px;
+    text-align: center;
+    margin:  8px 0 4px 0;
+    line-height: 1.3;
+    word-break: break-all;
+  }
+  .earing-items ul li button {
+    width: 150px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .earing_images ,.hoops {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+  }
+
 button{
     background-color: rgba(255, 228, 196, 0.26);
     border: none;
@@ -292,7 +338,7 @@ Shimmerin
 
   </div>
 <div class="earing-items">
-  <h1> Studs ~</h1>
+  <h1> Stud Earings </h1>
     <ul>
       <div class="earing_images">
  <li><a href="payment.html"><img src="earings/stud-1.jpg"></a><a href="#"><p>Bow Chic Stud Earings<br>Rs 1050</p><button>BUY NOW</button></a></li>
@@ -309,9 +355,9 @@ Shimmerin
  <li><a href="payment.html"><img src="earings/stud-12.jpg"></a><a href="#"><p>Floral Diamond Studs<br>Rs 999</p><button>BUY NOW</button></a></li>
  </div>
 </ul>  
-</div>
+
 <div class="hoops">
-  <h1> Hoop Earings ~</h1>
+  <h1> Hoop Earings </h1>
   <ul>
     <li><a href="payment.html"><img src="earings/hoop-1.jpg"></a><a href="#"><p>Pearl Hoop Earings<br>Rs 1100</p><button>BUY NOW</button></a></li>
     <li><a href="payment.html"><img src="earings/hoop-2.jpg"></a><a href="#"><p>Blossom Charm Hoops<br>Rs 999</p><button>BUY NOW</button></a></li>
@@ -327,6 +373,6 @@ Shimmerin
     <li><a href="payment.html"><img src="earings/hoop-12.jpg"></a><a href="#"><p>Midnight Leaf Hoops<br>Rs 999</p><button>BUY NOW</button></a></li>
   </ul>
 </div>
-
+</div>
 </body>
 </html>
